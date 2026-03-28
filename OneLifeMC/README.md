@@ -13,27 +13,40 @@
 > **❤️ Shared-life hardcore for multiplayer worlds.**
 >
 > OneLifeMC is a Paper plugin where the whole server shares one fate:
-> if one player dies, **everyone dies**.
+> if one player dies, **everyone dies.**
 
 ---
 
 ## ❤️ Features
 
-- ☠️ Shared-death gameplay
-- 👻 Spectator players excluded from the effect
+- ☠️ Shared-death gameplay — one death ends it for everyone
+- 👻 All players switch to spectator mode simultaneously on death
+- 📍 Every player teleports to the death location when triggered
 - 🧱 Server-side only, no client mod needed
-- ⚡ Lightweight Paper plugin
-- 🎮 Perfect for hardcore co-op challenge runs
-
+- 
 ---
 
 ## 🎮 How It Works
 
 When any player dies:
-
 1. The plugin listens for `PlayerDeathEvent`
-2. It checks all online players
-3. Every other online non-spectator player is killed
+2. The exact death location is **captured immediately** when the event fires
+3. After a short delay (1 second) to allow death to fully process
+4. Every online player — including the one who died — is switched to **Spectator mode**
+5. Every online player is **teleported to the exact death location**
+
+---
+
+## ⚙️ Server Setup
+
+To enable hardcore mode, set the following in your `server.properties`:
+
+```properties
+hardcore=true
+gamemode=survival
+```
+
+Restart the server after making changes.
 
 ---
 
