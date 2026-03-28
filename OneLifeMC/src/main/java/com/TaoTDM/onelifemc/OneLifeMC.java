@@ -7,7 +7,7 @@ public class OneLifeMC extends JavaPlugin {
     @Override
     public void onEnable() {
         getLogger().info("OneLifeMC enabled - shared death is active.");
-        getServer().getPluginManager().registerEvents(new SharedDeathListener(), this);
+        getServer().getPluginManager().registerEvents(new SharedDeathListener(this), this);
     }
 
     @Override
