@@ -1,39 +1,54 @@
-# TaoTDM Minecraft Plugins
+<div align="center">
 
-This repository is my personal collection of PaperMC plugins for Minecraft servers. Each plugin lives in its own subfolder as a complete, independent Gradle project.
+# OneLifeMC ❤️
 
-## 📁 Structure
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Figtree&pause=1000&color=FF5555&center=true&width=700&lines=One+life.+One+team.+One+mistake.;If+one+player+dies%2C+everyone+dies.;A+shared-life+hardcore+challenge+for+PaperMC.)](https://git.io/typing-svg)
 
-```
-Minecraft-Plugins/
-├── README.md
-├── PluginName/                      ← Plugin folder
-│   ├── src/main/java/           ← Plugin source code
-│   ├── src/main/resources/      ← plugin.yml, configs
-│   ├── build.gradle             ← Build script
-│   ├── gradlew                  ← Build runner
-│   └── gradle/                  ← Gradle wrapper
-└── .gitignore
-```
+![Java](https://img.shields.io/badge/Java-21-ED8B00?style=flat&logo=openjdk&logoColor=white)
+![PaperMC](https://img.shields.io/badge/PaperMC-plugin-ffffff?style=flat)
+![Minecraft](https://img.shields.io/badge/Minecraft-hardcore_mode-AA0000?style=flat)
 
-## 🚀 How to Use
+</div>
 
-### Building a Plugin
+> **❤️ Shared-life hardcore for multiplayer worlds.**
+>
+> OneLifeMC is a Paper plugin where the whole server shares one fate:
+> if one player dies, **everyone dies**.
+
+---
+
+## ❤️ Features
+
+- ☠️ Shared-death gameplay
+- 👻 Spectator players excluded from the effect
+- 🧱 Server-side only, no client mod needed
+- ⚡ Lightweight Paper plugin
+- 🎮 Perfect for hardcore co-op challenge runs
+
+---
+
+## 🎮 How It Works
+
+When any player dies:
+
+1. The plugin listens for `PlayerDeathEvent`
+2. It checks all online players
+3. Every other online non-spectator player is killed
+
+---
+
+## 🧰 Requirements
+
+- Java 21
+- PaperMC server
+- Compatible Minecraft / Paper version matching `plugin.yml`
+
+---
+
+## 📦 Build
+
+From inside the `OneLifeMC` folder:
+
 ```bash
-cd PluginName
 ./gradlew shadowJar
 ```
-Output jar: `build/libs/PluginName-1.0.0.jar`
-
-### Running the Server
-1. Download Paper jar from [papermc.io](https://papermc.io)
-2. Drop plugin `.jar` in `plugins/` folder
-3. Start server: `java -jar paper-1.21.4.jar --nogui`
-
-### Adding a New Plugin
-1. Clone the template inside the repo:
-```bash
-git clone https://github.com/CrimsonWarpedcraft/plugin-template.git NewPlugin
-rm -rf NewPlugin/.
-
-Sources
