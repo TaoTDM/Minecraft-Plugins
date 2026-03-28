@@ -1,0 +1,47 @@
+plugins {
+    id 'java'
+    id 'com.gradleup.shadow' version '9.4.0'
+}
+
+group = 'com.TaoTDM.onelifemc'
+version = '1.0.0'
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_21
+    targetCompatibility = JavaVersion.VERSION_21
+}
+
+repositories {
+    maven {
+        name = 'papermc'
+        url = 'https://repo.papermc.io/repository/maven-public/'
+    }
+    mavenCentral()
+}
+
+dependencies {
+    compileOnly 'io.papermc.paper:paper-api:1.21.4-R0.1-SNAPSHOT'
+    implementation 'io.papermc:paperlib:1.0.8'
+
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.10.3'
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+}
+
+test {
+    useJUnitPlatform()
+}
+
+processResources {
+    filesMatching("**/plugin.yml") {
+        expand project.properties
+    }
+}
+
+shadowJar {
+    archiveClassifier.set('')
+    relocate 'io.papermc.lib', 'shadow.io.papermc.paperlib'
+    minimize()
+}
+
+jar.enabled = false
+assemble.dependsOn shadowJar

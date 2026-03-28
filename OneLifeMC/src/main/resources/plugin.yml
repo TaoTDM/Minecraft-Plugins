@@ -1,0 +1,6 @@
+main: com.TaoTDM.onelifemc.OneLifeMC
+name: OneLifeMC
+version: "1.0"
+api-version: "1.21.11"
+author: TaoTDM
+description: All players share one life. If one dies, all die.
