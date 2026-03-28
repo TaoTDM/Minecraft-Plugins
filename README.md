@@ -22,7 +22,7 @@ Each plugin lives in its own folder as a standalone Gradle project, so I can bui
 ```
 Minecraft-Plugins/
 ├── README.md
-├── PluginName/                      ← Plugin folder
+├── PluginName/                  ← Plugin folder
 │   ├── src/main/java/           ← Plugin source code
 │   ├── src/main/resources/      ← plugin.yml, configs
 │   ├── build.gradle             ← Build script
