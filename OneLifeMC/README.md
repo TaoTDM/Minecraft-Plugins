@@ -23,7 +23,7 @@
 - 👻 All players switch to spectator mode simultaneously on death
 - 📍 Every player teleports to the death location when triggered
 - 🧱 Server-side only, no client mod needed
-- 
+  
 ---
 
 ## 🎮 How It Works
