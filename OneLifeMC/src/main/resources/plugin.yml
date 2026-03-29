@@ -1,6 +1,12 @@
 main: com.TaoTDM.onelifemc.OneLifeMC
 name: OneLifeMC
-version: "1.0"
-api-version: "1.21.11"
+version: "1.1"
+api-version: "1.21"
 author: TaoTDM
 description: All players share one life. If one dies, all die.
+commands:
+  setrespawndelay:
+    description: Set the respawn/reset delay in seconds
+    usage: /setrespawndelay <seconds>
+    permission: onelifemc.setrespawndelay
+    permission-message: You do not have permission to use this command.
