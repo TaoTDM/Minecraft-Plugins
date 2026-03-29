@@ -4,10 +4,11 @@
 
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Figtree&pause=1000&color=FF5555&center=true&width=700&lines=My+personal+collection+of+PaperMC+plugins.;Challenge+mechanics%2C+hardcore+ideas%2C+and+server-side+experiments.;Built+for+Minecraft+servers+with+Java+and+Paper.)](https://git.io/typing-svg)
 
-![Java](https://img.shields.io/badge/Java-21-ED8B00?style=flat&logo=openjdk&logoColor=white)
-![PaperMC](https://img.shields.io/badge/PaperMC-plugin-ffffff?style=flat)
-![Gradle](https://img.shields.io/badge/Gradle-build-02303A?style=flat&logo=gradle&logoColor=white)
-[![Current Version](https://img.shields.io/github/v/release/TaoTDM/Minecraft-Plugins?label=current%20version&color=success)](https://github.com/TaoTDM/Minecraft-Plugins/releases)
+![Java](https://img.shields.io/badge/Java-21-orange)
+![PaperMC](https://img.shields.io/badge/PaperMC-plugin-grey)
+![Gradle](https://img.shields.io/badge/Gradle-build-02303A)
+[![Current Version](https://img.shields.io/github/v/release/TaoTDM/Minecraft-Plugins?label=current%20version&color=brightgreen)](https://github.com/TaoTDM/Minecraft-Plugins/releases)
+
 
 </div>
 
