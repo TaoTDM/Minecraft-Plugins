@@ -39,7 +39,7 @@ Minecraft-Plugins/
 
 Each plugin has its own dedicated folder and README.
 
-- [OneLifeMC](https://github.com/TaoTDM/Minecraft-Plugins/blob/main/OneLifeMC/README.md) — Shared-life hardcore Paper plugin with world reset mechanics and instant respawn support.
+- [OneLifeMC](https://github.com/TaoTDM/Minecraft-Plugins/blob/main/OneLifeMC/) — Shared-life hardcore Paper plugin with world reset mechanics and instant respawn support.
 
 More plugins will be added here over time.
 
