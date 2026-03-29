@@ -7,7 +7,7 @@
 ![Java](https://img.shields.io/badge/Java-21-ED8B00?style=flat&logo=openjdk&logoColor=white)
 ![PaperMC](https://img.shields.io/badge/PaperMC-plugin-ffffff?style=flat)
 ![Minecraft](https://img.shields.io/badge/Minecraft-hardcore_mode-AA0000?style=flat)
-[![Current Version](https://img.shields.io/github/v/release/TaoTDM/Minecraft-Plugins?label=current%20version&color=success)](https://github.com/TaoTDM/Minecraft-Plugins/releases)
+[![Current Version](https://img.shields.io/github/v/release/TaoTDM/Minecraft-Plugins?label=current%20version&color=brightgreen)](https://github.com/TaoTDM/Minecraft-Plugins/releases)
 
 </div>
 
